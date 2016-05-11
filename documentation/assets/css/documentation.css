@@ -1,0 +1,119 @@
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.scroll-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    height: 35px;
+    width: 35px;
+    display: none;
+    text-align: center;
+    border-radius: 50%;
+    z-index: 50;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.scroll-to-top a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bolder;
+    padding-top: 9.3px;
+    display: inline-block;
+}
+.scroll-to-top:hover {
+    background-color: #00aeff;
+}
+.scroll-to-top:hover a {
+    text-decoration: none;
+}
+.blue {
+    background-color: #1565c0;
+}
+.gray {
+    background-color: #EFEFEF;
+}
+.sidebar {
+    padding: 15px 0;
+    color: #fff;
+    text-align: center;
+}
+.sidebar h2 {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0px;
+    padding: 15px 0;
+}
+.sidebar .nav li {
+    margin: 0px 0px 5px 0px;
+}
+.sidebar .nav li a {
+    color: #fff;
+    padding: 5px 0;
+    font-size: 14px;
+    line-height: 28px;
+    transition: background-color .15s linear;
+}
+.sidebar .nav li a:hover {
+    background-color: rgba(0, 0, 0, .3);
+}
+.main {
+    color: #4e616e;
+    padding: 15px 0;
+}
+.main .page-header {
+    background-color: #fff;
+    border: 0px;
+    margin: 0;
+    padding: 0;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .08);
+}
+.main .page-header h1 {
+    font-size: 23px;
+    font-weight: 400;
+    margin: 0px;
+    padding: 20px;
+}
+.main h2 {
+    font-size: 25px;
+    font-weight: normal;
+    margin: 30px 0px;
+}
+.well {
+    background-color: #fff;
+    border: 0px;
+    border-radius: 0px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, .08);
+    margin: 0px 0px 40px 0px;
+}
+.well h3 {
+    border-bottom: 1px solid rgba(0, 0, 0, .08);
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-top: -5px;
+    padding-bottom: 15px;
+}
+pre {
+    background-color: rgba(0, 0, 0, .05);
+    border: 0px;
+    border-radius: 0px;
+    font-size: 12px;
+    line-height: 18px;
+}
+code {
+    font-family: monospace;
+}
+.label {
+    border-radius: 0px;
+    font-size: 10px;
+}
+.colors span {
+    margin: 5px;
+    display: inline-block;
+}
