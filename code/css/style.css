@@ -11,7 +11,7 @@
 6. Features Section
 7. Describe Section
 8. Faq Section
-9. Screen Section     
+9. Screen Section
 10. Pricing Section
 11. Team Section
 12. Testimonials Section
@@ -395,10 +395,10 @@ section::before {
     font-size: 20px;
 }
 #navigation .social-icons .icon-google i {
-    color: #dd4b39;    
+    color: #dd4b39;
 }
 #navigation .social-icons .icon-facebook i {
-    color: #1283ff;   
+    color: #1283ff;
 }
 #navigation .social-icons .icon-twitter i {
     color: #55acee;
@@ -619,11 +619,11 @@ section::before {
 }
 .android-inner .hero-slider:hover .flex-prev {
     left: 0;
-    border-radius: 0 3px 3px 0; 
+    border-radius: 0 3px 3px 0;
 }
 .android-inner .hero-slider:hover .flex-next {
     right: 0;
-    border-radius: 3px 0 3px; 
+    border-radius: 3px 0 3px;
 }
 .android-inner .flex-direction-nav a:before {
     display: none;
@@ -933,9 +933,9 @@ section::before {
     pointer-events: auto;
 }
 @media screen and (max-width: 63.875em) {
-    .img-wrapper { 
-        font-size: 60%; 
-        width: 100%; 
+    .img-wrapper {
+        font-size: 60%;
+        width: 100%;
         padding: 0;
     }
     .feature-device {
@@ -973,7 +973,7 @@ section::before {
     .features-section-box.left i {
         margin-left: 20px;
     }
-    .features-section-row.left, 
+    .features-section-row.left,
     .features-section-row.right {
         margin-top: 0
     }
@@ -1377,7 +1377,7 @@ section::before {
     top: -5px;
     z-index: 1;
     overflow: hidden;
-    width: 75px; 
+    width: 75px;
     height: 75px;
     text-align: right;
 }
@@ -1402,8 +1402,8 @@ section::before {
 }
 .pricing-item .ribbon span::before {
     content: "";
-    position: absolute; 
-    left: 0px; 
+    position: absolute;
+    left: 0px;
     top: 100%;
     z-index: -1;
     border-left: 3px solid #F44336;
@@ -1413,8 +1413,8 @@ section::before {
 }
 .pricing-item .ribbon span::after {
     content: "";
-    position: absolute; 
-    right: 0px; 
+    position: absolute;
+    right: 0px;
     top: 100%;
     z-index: -1;
     border-left: 3px solid transparent;
@@ -2084,7 +2084,7 @@ download-section .center-heading h3 {
 }
 @media only screen and (max-width: 767px) {
     .error-block .number h1 {
-        font-size: 95px; 
+        font-size: 95px;
     }
     .error-block .details h3 {
         font-size: 28px;

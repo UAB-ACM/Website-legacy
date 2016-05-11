@@ -77,9 +77,9 @@ $(window).load(function () {
      * ************************************************************** */
 
     $(".type").typed({
-        strings: ["Andrew", "Pearson", "ACM", "Perfect", "This is a cool", "Extraordinary", "Impressive"],
-        typeSpeed: 200,
-        backDelay: 1500,
+        strings: ["Learn", "Improve", "Explore", "Excel"],
+        typeSpeed: 20,
+        backDelay: 2000,
         loop: true,
         loopCount: false
     });
