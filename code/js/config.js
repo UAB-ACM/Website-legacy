@@ -93,18 +93,18 @@ $(window).load(function () {
 
     function initMap() {
         var mapOptions = {
-            zoom: 13,
+            zoom: 15,
             scrollwheel: false,
             // Add your location here.
-            center: new google.maps.LatLng(40.693629, -73.938336),
+            center: new google.maps.LatLng(33.500648, -86.808504),
             styles: [{"featureType": "landscape", "stylers": [{"saturation": -100}, {"lightness": 65}, {"visibility": "on"}]}, {"featureType": "poi", "stylers": [{"saturation": -100}, {"lightness": 51}, {"visibility": "simplified"}]}, {"featureType": "road.highway", "stylers": [{"saturation": -100}, {"visibility": "simplified"}]}, {"featureType": "road.arterial", "stylers": [{"saturation": -100}, {"lightness": 30}, {"visibility": "on"}]}, {"featureType": "road.local", "stylers": [{"saturation": -100}, {"lightness": 40}, {"visibility": "on"}]}, {"featureType": "transit", "stylers": [{"saturation": -100}, {"visibility": "simplified"}]}, {"featureType": "administrative.province", "stylers": [{"visibility": "off"}]}, {"featureType": "water", "elementType": "labels", "stylers": [{"visibility": "on"}, {"lightness": 0}, {"saturation": -100}]}, {"featureType": "water", "elementType": "geometry", "stylers": [{"color": "#00aeff"}, {"lightness": 25}]}]};
 
         // Add your address here.
         var contentString = "<div id='map-content'>"
                 + "<div class='address'>"
-                + "<p>1185 Park Ave #8I25 A</p>"
-                + "<p>Near Church Road, Upper East Side</p>"
-                + "<p>Syracuse, New York, NY</p>"
+                + "<p>115A Campbell Hall</p>"
+                + "<p>1300 University Boulevard</p>"
+                + "<p>Birmingham, Alabama 35294</p>"
                 + "</div>"
                 + "</div>";
         var infowindow = new google.maps.InfoWindow({content: contentString});
@@ -116,7 +116,7 @@ $(window).load(function () {
         };
         var marker = new google.maps.Marker({
             // Add your location here.
-            position: new google.maps.LatLng(40.693629, -73.938336),
+            position: new google.maps.LatLng(33.500648, -86.808504),
             map: map,
             icon: icon,
             title: 'Location',
