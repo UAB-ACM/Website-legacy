@@ -478,7 +478,7 @@ section::before {
     overflow: visible;
 }
 .home-section::before {
-    background-image: url('../img/background.png');
+    background-color: #1E6B52;
 }
 .hero-text {
     position: relative;
@@ -738,7 +738,7 @@ section::before {
     border-radius: 50%;
     -webkit-border-radius: 50%;
     margin: 4px;
-    background: #03a9f4;
+    background: #1E6B52;
 }
 .overview-section-box:hover i {
     -webkit-box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
@@ -1061,7 +1061,7 @@ section::before {
  * ************************************************************** */
 
 .describe-section::before {
-    background-image: url('../img/background.png');
+    background-color: #1E6B52;
 }
 .describe-section .center-heading {
     margin-bottom: 30px;
@@ -1224,7 +1224,7 @@ section::before {
  * ************************************************************** */
 
 .faq-section {
-    background-color: #199aef;
+    background-color: #1E6B52;
 }
 .faq-section .collapsible-header {
     min-height: 3.5rem;
@@ -1290,7 +1290,7 @@ section::before {
  * ************************************************************** */
 
 #price::before {
-    background-image: url('../img/background.png');
+    background-color: #1E6B52;
 }
 .pricing-row .pricing-item {
     position: relative;
@@ -1317,7 +1317,7 @@ section::before {
     position: relative;
     line-height: 50px;
     font-weight: 300;
-    background-color: #03a9f4;
+    background-color: #1E6B52;
     color: #fff;
     font-size: 80px;
 }
@@ -1458,7 +1458,7 @@ section::before {
  * ************************************************************** */
 
 .team-section {
-    background-color: #0288d1;
+    /*background-color: #1E6B52;*/
 }
 .team-section .card {
     margin: 0 5px 30px;
@@ -1598,7 +1598,7 @@ section::before {
  * ************************************************************** */
 
 .count-section::before {
-    background-image: url('../img/background.png');
+    background-color: #1E6B52;
     height: 180%;
 }
 .count-section .row {
