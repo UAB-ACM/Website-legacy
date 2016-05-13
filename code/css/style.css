@@ -478,7 +478,7 @@ section::before {
     overflow: visible;
 }
 .home-section::before {
-    background-image: url('../img/background.jpg');
+    background-image: url('../img/background.png');
 }
 .hero-text {
     position: relative;
@@ -1061,7 +1061,7 @@ section::before {
  * ************************************************************** */
 
 .describe-section::before {
-    background-image: url('../img/background.jpg');
+    background-image: url('../img/background.png');
 }
 .describe-section .center-heading {
     margin-bottom: 30px;
@@ -1290,7 +1290,7 @@ section::before {
  * ************************************************************** */
 
 #price::before {
-    background-image: url('../img/background.jpg');
+    background-image: url('../img/background.png');
 }
 .pricing-row .pricing-item {
     position: relative;
@@ -1598,7 +1598,7 @@ section::before {
  * ************************************************************** */
 
 .count-section::before {
-    background-image: url('../img/background.jpg');
+    background-image: url('../img/background.png');
     height: 180%;
 }
 .count-section .row {
