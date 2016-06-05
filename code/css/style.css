@@ -714,6 +714,7 @@ section::before {
     margin-top: 0;
     margin-bottom: 40px;
     padding: 20px;
+    min-height: 350px;
 }
 .overview-section-box h3 {
     margin: 15px 0;
@@ -1652,32 +1653,32 @@ section::before {
  * 14. Location Section
  * ************************************************************** */
 
-#location .address-block {
+#contact .address-block {
     padding: 5% 5% 5% 7.9%;
     background-color: #FAFAFA;
 }
-#location .address-block .center-heading {
+#contact .address-block .center-heading {
     margin-bottom: 25px;
 }
-#location .address-block .center-heading p {
+#contact .address-block .center-heading p {
     font-size: 16px;
 }
-#location .map-block,#location .address-block ul {
+#contact .map-block,#contact .address-block ul {
     padding: 0;
     margin-bottom: 0px;
 }
-#location .address-block ul li p {
+#contact .address-block ul li p {
     margin-bottom: 5px;
     font-size: 16px;
     font-weight: 300;
 }
-#location .address-block ul li {
+#contact .address-block ul li {
     list-style: none;
     margin-bottom: 20px;
     padding-left: 45px;
     position: relative;
 }
-#location .address-block ul li:first-child::before {
+#contact .address-block ul li:first-child::before {
     content: "\f455";
     font-family: 'Ionicons';
     font-size: 40px;
@@ -1688,7 +1689,7 @@ section::before {
     font-weight: 500;
     color: #03a9f4;
 }
-#location .address-block ul li:nth-child(2)::before {
+#contact .address-block ul li:nth-child(2)::before {
     content: "\f4b8";
     font-family: 'Ionicons';
     font-size: 40px;
@@ -1699,7 +1700,7 @@ section::before {
     font-weight: 500;
     color: #00AEFF;
 }
-#location .address-block ul li:last-child::before {
+#contact .address-block ul li:last-child::before {
     content: "\f422";
     font-family: 'Ionicons';
     font-size: 40px;
@@ -1710,7 +1711,7 @@ section::before {
     font-weight: 500;
     color: #00AEFF;
 }
-#location .address-block .modal-trigger {
+#contact .address-block .modal-trigger {
     font-size: 13px;
     padding: 0 15px;
     margin-right: 20px;
@@ -1822,7 +1823,7 @@ input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]),
     }
 }
 @media only screen and (max-width: 992px) {
-    #location .address-block .center-heading h3 {
+    #contact .address-block .center-heading h3 {
         font-size: 30px;
     }
     .md-content {
@@ -1830,16 +1831,16 @@ input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]),
     }
 }
 @media only screen and (max-width: 767px) {
-    #location .address-block {
+    #contact .address-block {
         padding: 30px;
     }
-    #location .address-block .center-heading {
+    #contact .address-block .center-heading {
         text-align: center !important;
     }
-    #location .map-block {
+    #contact .map-block {
         height: 400px !important;
     }
-    #location .address-block ul li p {
+    #contact .address-block ul li p {
         font-size: 15px
     }
     .md-content {
