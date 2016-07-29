@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="angularApp">
 
   <head>
 
@@ -16,6 +16,8 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="css/custom.css" rel="stylesheet" type="text/css">
     <script src="js/modernizr.custom.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
 
     <!-- Favicons -->
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/icons/favicons/apple-touch-icon-57x57.png" />
@@ -35,16 +37,16 @@
     <meta name="application-name" content="ACM|UAB"/>
 
     <!-- Title -->
-    <title>The Association for Computing Machinery | UAB</title>
+    <title>UAB | The Association for Computing Machinery</title>
 
   </head>
 
-  <body>
+  <body ng-controller="mainController">
 
     <!-- Scroll-to-top Button -->
     <div class="scroll-to-top waves-effect waves-light trans-effect">
       <a href="#"><i class="ion-chevron-up"></i></a>
-    </div><!-- Scroll-to-top Button ends -->
+    </div>
 
     <!-- Site navigation -->
     <div id="navigation">
@@ -65,7 +67,7 @@
             <ul class="right main-nav">
               <li><a class="waves-effect waves-light" href="#welcome">Welcome</a></li>
               <li><a class="waves-effect waves-light" href="#about">About ACM</a></li>
-              <li><a class="waves-effect waves-light" href="#goals">Goals</a></li>
+              <li><a class="waves-effect waves-light" href="#featured">Featured</a></li>
               <li><a class="waves-effect waves-light" href="#events">Events</a></li>
               <li><a class="waves-effect waves-light" href="#tutoring">Tutoring</a></li>
               <li><a class="waves-effect waves-light" href="#officers">Officers</a></li>
@@ -77,19 +79,19 @@
             <ul class="side-nav" id="mobile-demo">
               <li><a class="waves-effect waves-light" href="#welcome">Welcome</a></li>
               <li><a class="waves-effect waves-light" href="#about">About ACM</a></li>
-              <li><a class="waves-effect waves-light" href="#goals">Goals</a></li>
+              <li><a class="waves-effect waves-light" href="#featured">Featured</a></li>
               <li><a class="waves-effect waves-light" href="#events">Events</a></li>
               <li><a class="waves-effect waves-light" href="#tutoring">Tutoring</a></li>
               <li><a class="waves-effect waves-light" href="#officers">Officers</a></li>
               <li><a class="waves-effect waves-light" href="#contact">Contact</a></li>
               <li><a class="nav-btn-download waves-effect waves-light btn red white-text"><i class="ion-android-cart left"></i>Buy Now!</a></li>
             </ul>
-          </div><!-- Nav-wrapper ends -->
-        </div><!-- Container ends -->
-      </nav><!-- Nav ends -->
-    </div><!-- Navigation ends -->
+          </div>
+        </div>
+      </nav>
+    </div>
 
-    <!-- Section home -->
+    <!-- Welcome Section -->
     <section id="welcome" class="home-section">
       <div class="overlay-shade"></div>
       <div class="container">
@@ -97,24 +99,37 @@
           <div class="col s12 m7 l7 hero-text">
             <h1 class="white-text">Welcome to ACM at UAB</h1>
             <h2 class="white-text">Come <span class="type"></span>!</h2>
-            <p class="white-text">The ACM at UAB represents UAB's student branch for the Association for Computing Machinery. ACM at UAB plans different events and activities for its members. These activities include research panels and discussions, group trips, dinners and lunches, and many other exciting events.</p>
-          </div><!-- Col ends -->
+            <p class="white-text">
+              The Association for Computing Machinery at the University of Alabama at Birmingham
+              represents UAB's student branch for the nationwide ACM organization. ACM is a national society dedicated
+              to advancing computating as a science and as a profession. Please browse the website for more information
+              regarding UAB's ACM student organization.
+            </p>
+          </div>
           <div id="welcome-image" class="col s1 m5 l4">
             <img src="img/blazer-half.png" height="400px"/>
-        </div><!-- Col ends -->
-        </div><!-- Row ends -->
-      </div><!-- Container ends -->
-    </section><!-- Section ends -->
+        </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Section overview -->
+    <!-- About ACM Section -->
     <section id="about" class="overview-section sec-padded-1x">
       <div class="container">
         <div class="row">
-          <div class="col s12 l8 offset-l2">
+          <div class="col s12 l10 offset-l1">
             <div class="center-heading">
-              <h3>ACM Explained</h3>
+              <h3>About ACM</h3>
               <span class="center-line red"></span>
-              <p>The ACM at UAB's specific goals</p>
+              <p>
+                UAB's ACM is a student lead organization that brings together teachers, students and researchers
+                and connects them with other ACM members worldwide. UAB's ACM is only a small part of a much larger
+                global network of computing professionals. UAB's ACM hosts events such as hackathons, informational
+                lectures and game nights for its members and any technology related individuals who would like to attend.
+                UAB's ACM offers free tutoring services to anyone in the Computer and Information Sciences major,
+                hosts an ongoing group chat for all ACM members, manages Github projects for all ACM members to contribute
+                to and so much more. Here are some of UAB's ACM's goals:
+              </p>
             </div>
           </div>
         </div>
@@ -127,7 +142,7 @@
                 Promote knowledge of the science, design, development, languages, and applications of modern computing technology.
               </p>
             </div>
-          </div><!-- Col ends -->
+          </div>
           <div class="col s12 m6 l3">
             <div class="card-panel overview-section-box">
               <i class="ion-android-desktop trans-effect"></i>
@@ -136,7 +151,7 @@
                 Network professional, academic, and other groups of people having interests in computing machinery.
               </p>
             </div>
-          </div><!-- Col ends -->
+          </div>
           <div class="col s12 m6 l3">
             <div class="card-panel overview-section-box">
               <i class="ion-android-list trans-effect"></i>
@@ -145,7 +160,7 @@
                 Provide a greater awareness of computing machinery and its applications at national and local levels.
               </p>
             </div>
-          </div><!-- Col ends -->
+          </div>
           <div class="col s12 m6 l3">
             <div class="card-panel overview-section-box">
               <i class="ion-android-star-outline trans-effect"></i>
@@ -154,40 +169,41 @@
                 Empower those with an interest in computing machinery and it's applications with the tools and knowledge they need to succeed.
               </p>
             </div>
-          </div><!-- Col ends -->
-        </div><!-- Row ends -->
-      </div><!-- Container ends -->
-    </section><!-- Section ends -->
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Section explained -->
-    <section id="goals" class="describe-section z-depth-1">
+    <!-- Featured Section -->
+    <section id="featured" class="describe-section z-depth-1">
       <div class="overlay-green-shade"></div>
       <div class="sec-padded-1x">
         <div class="container">
           <div class="row">
             <div class="col s12 l8 offset-l2">
               <div class="center-heading">
-                <h3 class="white-text">Goals</h3>
+                <h3 class="white-text">Featured Board</h3>
                 <span class="center-line red"></span>
-                <p class="white-text">Know more about the App. Lorem ipsum dolor sit amet consectetur adipisicing elit<br> sed do eiusmod tempor incididunt</p>
+                <p class="white-text">Stay up to date - we want to make sure you don't miss out on anything important or fascinating.</p>
               </div>
             </div>
           </div>
           <div class="row">
             <div class="col s12">
               <ul class="tabs z-depth-2">
-                <li class="tab col s3"><a href="#promote">Promote</a></li>
-                <li class="tab col s3"><a class="active" href="#network">Network</a></li>
-                <li class="tab col s3"><a href="#provide">Provide</a></li>
-                <li class="tab col s3"><a href="#empower">Empower</a></li>
+                <li class="tab col s3"><a href="#achievements">Achievements</a></li>
+                <li class="tab col s3"><a class="active" href="#news">News</a></li>
+                <li class="tab col s3"><a href="#links">Links</a></li>
+                <li class="tab col s3"><a href="#openings">Job Openings</a></li>
               </ul>
-            </div><!-- Col ends -->
-            <div id="promote" class="col s12 tab-content">
+            </div>
+            <!-- Start Achievements Tab -->
+            <div id="achievements" class="col s12 tab-content">
               <div class="col s12 m6 l6 center">
                 <img src="img/bg-screen-3.png" alt="" class="responsive-img">
               </div>
               <div class="col s12 m6 l6">
-                <h3>Promote</h3>
+                <h3>Recent Achievements</h3>
                 <p>Duis posuere auctor erat nec lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum. Pellentesque vestibulum, sem vitae sollicitudin scelerisque, tortor urna luctus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum, sem vitae sollicitudin scelerisque.</p>
                 <p>Eros luctus eu id eu metus potenti eros litora, a congue convallis iaculis sollicitudin nisi nam elementum, volutpat himenaeos egestas etiam ac eu molestie.</p>
                 <div class="progress-box">
@@ -202,23 +218,14 @@
                     <div class="determinate wow slideInLeft feature-2"></div>
                   </div>
                 </div>
-                <div class="progress-box">
-                  <span>Feature 3</span>
-                  <div class="progress z-depth-1">
-                    <div class="determinate wow slideInLeft feature-3"></div>
-                  </div>
-                </div>
-                <div class="progress-box">
-                  <span>Feature 4</span>
-                  <div class="progress z-depth-1">
-                    <div class="determinate wow slideInLeft feature-4"></div>
-                  </div>
-                </div>
               </div>
-            </div><!-- Tab ends -->
-            <div id="network" class="col s12 tab-content">
+            </div>
+            <!-- End Achievements Tab -->
+
+            <!-- Start News Tab -->
+            <div id="news" class="col s12 tab-content">
               <div class="col s12 m6 l6">
-                <h3>Network</h3>
+                <h3>News</h3>
                 <p>The Association of Computing Machinery (ACM) is the world’s oldest and largest scientific computing society. The UAB ACM is the ACM’s local student chapter for the UAB community. It has been active continuously since 1984, providing UAB’s computer science and related students and professionals with educational and social opportunities.</p>
                 <ul>
                   <li>Promote an increased knowledge of the science, design, development, construction, languages, and applications of modern computing technology.</li>
@@ -229,24 +236,13 @@
               <div class="col s12 m6 l6 center">
                 <img src="img/bg-screen-1.png" alt="" class="responsive-img">
               </div>
-            </div><!-- Tab ends -->
-            <div id="empower" class="col s12 tab-content">
-              <div class="col s12 m6 l6 center">
-                <img src="img/bg-screen-1.png" alt="" class="responsive-img">
-              </div>
+            </div>
+            <!-- End News Tab -->
+
+            <!-- Start Links Tab -->
+            <div id="links" class="col s12 tab-content">
               <div class="col s12 m6 l6">
-                <h3>Empower</h3>
-                <p>The Association of Computing Machinery (ACM) is the world’s oldest and largest scientific computing society. The UAB ACM is the ACM’s local student chapter for the UAB community. It has been active continuously since 1984, providing UAB’s computer science and related students and professionals with educational and social opportunities.</p>
-                <ul>
-                  <li>Promote an increased knowledge of the science, design, development, construction, languages, and applications of modern computing technology.</li>
-                  <li>Promote a greater awareness of computing machinery and its applications at national and local levels.</li>
-                  <li>Provide for professional, academic, and social interactions among persons having interests in computing machinery.</li>
-                </ul>
-              </div>
-            </div><!-- Tab ends -->
-            <div id="provide" class="col s12 tab-content">
-              <div class="col s12 m6 l6">
-                <h3>Provide</h3>
+                <h3>Links</h3>
                 <p>Duis posuere auctor erat nec lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum. Pellentesque vestibulum, sem vitae sollicitudin scelerisque, tortor urna luctus metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vestibulum, sem vitae sollicitudin scelerisque.</p>
                 <p>Eros luctus eu id eu metus potenti eros litora, a congue convallis iaculis sollicitudin nisi nam elementum, volutpat himenaeos egestas etiam ac eu molestie.</p>
                 <div class="progress-box">
@@ -277,14 +273,32 @@
               <div class="col s12 m6 l6 center">
                 <img src="img/bg-screen-3.png" alt="" class="responsive-img">
               </div>
-            </div><!-- Tab ends -->
-          </div><!-- Row ends -->
-        </div><!-- Container ends -->
-      </div><!-- Sec-padded ends -->
-    </section><!-- Section ends -->
+            </div>
+            <!-- End Links Tab -->
+
+            <!-- Start Openings Tab -->
+            <div id="openings" class="col s12 tab-content">
+              <div class="col s12 m6 l6 center">
+                <img src="img/bg-screen-1.png" alt="" class="responsive-img">
+              </div>
+              <div class="col s12 m6 l6">
+                <h3>Job Openings</h3>
+                <p>The Association of Computing Machinery (ACM) is the world’s oldest and largest scientific computing society. The UAB ACM is the ACM’s local student chapter for the UAB community. It has been active continuously since 1984, providing UAB’s computer science and related students and professionals with educational and social opportunities.</p>
+                <ul>
+                  <li>Promote an increased knowledge of the science, design, development, construction, languages, and applications of modern computing technology.</li>
+                  <li>Promote a greater awareness of computing machinery and its applications at national and local levels.</li>
+                  <li>Provide for professional, academic, and social interactions among persons having interests in computing machinery.</li>
+                </ul>
+              </div>
+            </div>
+            <!-- End Openings Tab -->
+          </div>
+        </div>
+      </div>
+    </section>
 
 
-    <!-- Section features -->
+    <!-- Events Section -->
     <section id="events" class="features-section sec-padded-1x">
       <div class="container">
         <div class="row">
@@ -304,22 +318,22 @@
                 <h4 class="trans-effect">Hackathon (8/16/2016)</h4>
                 <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
               </div>
-            </div><!-- Feature box ends -->
+            </div>
             <div class="features-section-box left two">
               <i class="ion-ios-game-controller-b z-depth-1 trans-effect"></i>
               <div class="features-text ">
                 <h4 class="trans-effect">Game Night (9/1/2016)</h4>
                 <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
               </div>
-            </div><!-- Feature box ends -->
+            </div>
             <div class="features-section-box left three">
               <i class="ion-social-tux z-depth-1 trans-effect"></i>
               <div class="features-text ">
                 <h4 class="trans-effect">Linux Workshiop (9/14/2016)</h4>
                 <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
               </div>
-            </div><!-- Feature box ends -->
-          </div><!-- Col ends -->
+            </div>
+          </div>
           <div class="col s12 m6 l6 features-section-row right">
             <div class="features-section-box right top four">
               <i class="ion-social-github z-depth-1 trans-effect"></i>
@@ -327,191 +341,102 @@
                 <h4 class="trans-effect">Learn GIT the easy way (10/1/2016)</h4>
                 <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
               </div>
-            </div><!-- Feature box ends -->
+            </div>
             <div class="features-section-box right five">
               <i class="ion-ios-people z-depth-1 trans-effect"></i>
               <div class="features-text ">
                 <h4 class="trans-effect">Interviews Explained (10/14/2016)</h4>
                 <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
               </div>
-            </div><!-- Feature box ends -->
+            </div>
             <div class="features-section-box right six">
               <i class="ion-unlocked z-depth-1 trans-effect"></i>
               <div class="features-text ">
                 <h4 class="trans-effect">Breakout Night (11/1/2016)</h4>
                 <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
               </div>
-            </div><!-- Feature box ends -->
-          </div><!-- Col ends -->
-        </div><!-- Row ends -->
-      </div><!-- Container ends -->
-    </section><!-- Section ends -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Section faq -->
+    <!-- Tutoring Section -->
     <section id="tutoring" class="faq-section sec-padded-1x z-depth-1">
       <div class="container">
         <div class="row">
-          <div class="col m5 l5 hide-on-small-only center">
-            <img src="img/bg-screen-2.png" alt="" class="responsive-img">
-          </div>
-          <div class="col s12 m7 l7">
+          <div class="col s12 l10 offset-l1">
             <div class="center-heading">
               <h3 class="white-text">Tutoring</h3>
               <span class="center-line red"></span>
-              <p class="white-text">Lorem ipsum dolor sit amet consectetur adipisicing elit<br> sed do eiusmod tempor incididunt</p>
+              <p class="white-text">
+                Tutoring is for classes included in the Computer and Information Sciences
+                cirriculum. Tutoring is free to anyone currently taking any CIS classes.
+                ACM members have full access to direct messaging to all of UAB's ACM tutors.
+              </p>
             </div>
-            <ul class="collapsible z-depth-2" data-collapsible="accordion">
-              <li>
-                <div class="collapsible-header active"><i class="ion-android-more-vertical"></i>Clayton Brawley</div>
-                <div class="collapsible-body">
-                  <p>
-                    <strong>Classes:</strong> CS 250, CS 303, CS 330, CS 350, CS 433
-                  </p>
-                  <table style="width: 90%; margin-left: 5%; margin-bottom: 25px;">
-                    <thead>
-                      <th>Day</th>
-                      <th>Times</th>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Monday</td>
-                        <td>12:00pm - 2:00pm</td>
-                      </tr>
-                      <tr>
-                        <td>Tuesday</td>
-                        <td>11:00am - 1:30pm, 4:30pm - 6:00pm</td>
-                      </tr>
-                      <tr>
-                        <td>Wednesday</td>
-                        <td>8:00am - 10:00am, 11:00am - 12:30pm, 2:00pm - 4:00pm</td>
-                      </tr>
-                      <tr>
-                        <td>Thursday</td>
-                        <td>2:00pm - 5:00pm</td>
-                      </tr>
-                      <tr>
-                        <td>Friday</td>
-                        <td>12:00pm - 2:00pm</td>
-                      </tr>
-                    </tbody>
-                  </table>
+          </div>
+          <div class="col s12">
+            <div class="col s12 m5 offset-m1">
+              <div ng-repeat="u in unique_classes | orderBy: 'classNumber'" ng-if="$even">
+                <a href="" style="font-size: 1.2em" ng-click="showLine =! showLine">
+                  <span class="ion-android-arrow-dropright" style="margin-right: 2px;" ng-show="!showLine"></span>
+                  <span class="ion-android-arrow-dropdown" style="margin-right: 2px;" ng-show="showLine"></span>
+                  {{u.classNumber}}:&nbsp;{{u.className}}
+                </a>
+                <div class="col s12" style="color: white; margin: 10px 0;" ng-show="showLine">
+                  <div ng-repeat="t in tutors">
+                    <div ng-show="doesTutorThisClass(t, u.classNumber)">
+                      <a href="" ng-click="showTimes = ! showTimes" style="color: white;">
+                        <strong>
+                          <span class="ion-android-arrow-dropright" style="margin-right: 2px;" ng-show="!showTimes"></span>
+                          <span class="ion-android-arrow-dropdown" style="margin-right: 2px;" ng-show="showTimes"></span>
+                          {{t.tutorName}}&nbsp;<span style="font-size: .8em">({{t.tutorEmail}})</span>
+                        </strong>
+                      </a>
+                      <div class="col s12" style="margin: 10px 0" ng-show="showTimes">
+                        <div ng-repeat="a in t.availableTimes">
+                          <span style="font-size: .9em">{{a}}</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </li>
-              <li>
-                <div class="collapsible-header"><i class="ion-android-more-vertical"></i>Andrew Pearson</div>
-                <div class="collapsible-body">
-                  <p>
-                    <strong>Classes:</strong> CS 250, CS 303, CS 330, CS 350, CS 433
-                  </p>
-                  <table style="width: 90%; margin-left: 5%; margin-bottom: 25px;">
-                    <thead>
-                      <th>Day</th>
-                      <th>Times</th>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Monday</td>
-                        <td>12:00pm - 2:00pm</td>
-                      </tr>
-                      <tr>
-                        <td>Tuesday</td>
-                        <td>11:00am - 1:30pm, 4:30pm - 6:00pm</td>
-                      </tr>
-                      <tr>
-                        <td>Wednesday</td>
-                        <td>8:00am - 10:00am, 11:00am - 12:30pm, 2:00pm - 4:00pm</td>
-                      </tr>
-                      <tr>
-                        <td>Thursday</td>
-                        <td>2:00pm - 5:00pm</td>
-                      </tr>
-                      <tr>
-                        <td>Friday</td>
-                        <td>12:00pm - 2:00pm</td>
-                      </tr>
-                    </tbody>
-                  </table>
+              </div>
+            </div>
+            <div class="col s12 m5">
+              <div ng-repeat="u in unique_classes | orderBy: 'classNumber'" ng-if="$odd">
+                <a href="" style="font-size: 1.2em" ng-click="showLine =! showLine">
+                  <span class="ion-android-arrow-dropright" style="margin-right: 2px;" ng-show="!showLine"></span>
+                  <span class="ion-android-arrow-dropdown" style="margin-right: 2px;" ng-show="showLine"></span>
+                  {{u.classNumber}}:&nbsp;{{u.className}}
+                </a>
+                <div class="col s12" style="color: white; margin: 10px 0;" ng-show="showLine">
+                  <div ng-repeat="t in tutors">
+                    <div ng-show="doesTutorThisClass(t, u.classNumber)">
+                      <a href="" ng-click="showTimes = ! showTimes" style="color: white;">
+                        <strong>
+                          <span class="ion-android-arrow-dropright" style="margin-right: 2px;" ng-show="!showTimes"></span>
+                          <span class="ion-android-arrow-dropdown" style="margin-right: 2px;" ng-show="showTimes"></span>
+                          {{t.tutorName}}&nbsp;<span style="font-size: .8em">({{t.tutorEmail}})</span>
+                        </strong>
+                      </a>
+                      <div class="col s12" style="margin: 10px 0" ng-show="showTimes">
+                        <div ng-repeat="a in t.availableTimes">
+                          <span style="font-size: .9em">{{a}}</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </li>
-              <li>
-                <div class="collapsible-header"><i class="ion-android-more-vertical"></i>Matt Schmale</div>
-                <div class="collapsible-body">
-                  <p>
-                    <strong>Classes:</strong> CS 250, CS 303, CS 330, CS 350, CS 433
-                  </p>
-                  <table style="width: 90%; margin-left: 5%; margin-bottom: 25px;">
-                    <thead>
-                      <th>Day</th>
-                      <th>Times</th>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Monday</td>
-                        <td>12:00pm - 2:00pm</td>
-                      </tr>
-                      <tr>
-                        <td>Tuesday</td>
-                        <td>11:00am - 1:30pm, 4:30pm - 6:00pm</td>
-                      </tr>
-                      <tr>
-                        <td>Wednesday</td>
-                        <td>8:00am - 10:00am, 11:00am - 12:30pm, 2:00pm - 4:00pm</td>
-                      </tr>
-                      <tr>
-                        <td>Thursday</td>
-                        <td>2:00pm - 5:00pm</td>
-                      </tr>
-                      <tr>
-                        <td>Friday</td>
-                        <td>12:00pm - 2:00pm</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </li>
-              <li>
-                <div class="collapsible-header"><i class="ion-android-more-vertical"></i>Lina King</div>
-                <div class="collapsible-body">
-                  <p>
-                    <strong>Classes:</strong> CS 250, CS 303, CS 330, CS 350, CS 433
-                  </p>
-                  <table style="width: 90%; margin-left: 5%; margin-bottom: 25px;">
-                    <thead>
-                      <th>Day</th>
-                      <th>Times</th>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Monday</td>
-                        <td>12:00pm - 2:00pm</td>
-                      </tr>
-                      <tr>
-                        <td>Tuesday</td>
-                        <td>11:00am - 1:30pm, 4:30pm - 6:00pm</td>
-                      </tr>
-                      <tr>
-                        <td>Wednesday</td>
-                        <td>8:00am - 10:00am, 11:00am - 12:30pm, 2:00pm - 4:00pm</td>
-                      </tr>
-                      <tr>
-                        <td>Thursday</td>
-                        <td>2:00pm - 5:00pm</td>
-                      </tr>
-                      <tr>
-                        <td>Friday</td>
-                        <td>12:00pm - 2:00pm</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </li>
-            </ul>
-          </div><!-- Col ends -->
-        </div><!-- Row ends -->
-      </div><!-- Container ends -->
-    </section><!-- Section ends -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Section team -->
+    <!-- Officers Section -->
     <section id="officers" class="team-section z-depth-1">
       <div class="sec-padded-1x">
         <div class="container">
@@ -528,141 +453,121 @@
             <div class="col s12 m6 l3">
               <div class="card z-depth-2">
                 <div class="card-image waves-effect waves-block waves-light">
-                  <!-- Replace 'src' attribute with the path to the team member image -->
                   <img src="img/team/team1.png" alt="" class="trans-effect circle responsive-img">
                 </div>
                 <div class="card-content">
                   <span class="card-title activator grey-text text-darken-4">Andrew Pearson<i class="ion-android-more-vertical right"></i></span>
                   <p>Chair</p>
-                  <ul class="list-inline list-follow">
-                    <li class="waves-effect"><a href="#" class="trans-effect"><i class="ion-social-facebook"></i></a></li>
-                    <li class="waves-effect"><a href="#" class="trans-effect"><i class="ion-social-twitter"></i></a></li>
-                    <li class="waves-effect"><a href="#" class="trans-effect"><i class="ion-social-linkedin"></i></a></li>
-                  </ul>
                 </div>
                 <div class="card-reveal">
                   <span class="card-title grey-text text-darken-4">Andrew Pearson<i class="ion-android-close right"></i></span>
                   <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.</p>
                 </div>
               </div>
-            </div><!-- Col ends -->
+            </div>
             <div class="col s12 m6 l3">
               <div class="card z-depth-2">
                 <div class="card-image waves-effect waves-block waves-light">
-                  <!-- Replace 'src' attribute with the path to the team member image -->
                   <img src="img/team/team2.png" alt="" class="trans-effect circle responsive-img">
                 </div>
                 <div class="card-content">
                   <span class="card-title activator grey-text text-darken-4">Matt Schmale<i class="ion-android-more-vertical right"></i></span>
                   <p>Vice Chair</p>
-                  <ul class="list-inline list-follow">
-                    <li class="waves-effect"><a href="#" class="trans-effect"><i class="ion-social-facebook"></i></a></li>
-                    <li class="waves-effect"><a href="#" class="trans-effect"><i class="ion-social-twitter"></i></a></li>
-                    <li class="waves-effect"><a href="#" class="trans-effect"><i class="ion-social-linkedin"></i></a></li>
-                  </ul>
                 </div>
                 <div class="card-reveal">
                   <span class="card-title grey-text text-darken-4">Matt Schmale<i class="ion-android-close right"></i></span>
                   <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.</p>
                 </div>
               </div>
-            </div><!-- Col ends -->
+            </div>
             <div class="col s12 m6 l3">
               <div class="card z-depth-2">
                 <div class="card-image waves-effect waves-block waves-light">
-                  <!-- Replace 'src' attribute with the path to the team member image -->
                   <img src="img/team/team3.png" alt="" class="trans-effect circle responsive-img">
                 </div>
                 <div class="card-content">
                   <span class="card-title activator grey-text text-darken-4">Lina King<i class="ion-android-more-vertical right"></i></span>
                   <p>Secretary</p>
-                  <ul class="list-inline list-follow">
-                    <li class="waves-effect"><a href="#" class="trans-effect"><i class="ion-social-facebook"></i></a></li>
-                    <li class="waves-effect"><a href="#" class="trans-effect"><i class="ion-social-twitter"></i></a></li>
-                    <li class="waves-effect"><a href="#" class="trans-effect"><i class="ion-social-linkedin"></i></a></li>
-                  </ul>
                 </div>
                 <div class="card-reveal">
                   <span class="card-title grey-text text-darken-4">Lina King<i class="ion-android-close right"></i></span>
                   <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.</p>
                 </div>
               </div>
-            </div><!-- Col ends -->
+            </div>
             <div class="col s12 m6 l3">
               <div class="card z-depth-2">
                 <div class="card-image waves-effect waves-block waves-light">
-                  <!-- Replace 'src' attribute with the path to the team member image -->
                   <img src="img/team/team4.png" alt="" class="trans-effect circle responsive-img">
                 </div>
                 <div class="card-content">
                   <span class="card-title activator grey-text text-darken-4">Mossah Aljalal<i class="ion-android-more-vertical right"></i></span>
                   <p>Treasurer</p>
-                  <ul class="list-inline list-follow">
-                    <li class="waves-effect"><a href="#" class="trans-effect"><i class="ion-social-facebook"></i></a></li>
-                    <li class="waves-effect"><a href="#" class="trans-effect"><i class="ion-social-twitter"></i></a></li>
-                    <li class="waves-effect"><a href="#" class="trans-effect"><i class="ion-social-linkedin"></i></a></li>
-                  </ul>
                 </div>
                 <div class="card-reveal">
                   <span class="card-title grey-text text-darken-4">Mossah Aljalal<i class="ion-android-close right"></i></span>
                   <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.</p>
                 </div>
               </div>
-            </div><!-- Col ends -->
-          </div><!-- Row ends -->
-        </div><!-- Container ends -->
-      </div><!-- Sec-padded ends -->
-    </section><!-- Section ends -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Section price -->
+    <!-- Member Option Section -->
     <section id="price" class="price-section z-depth-1">
       <div class="sec-padded-1x">
         <div class="container">
           <div class="row">
             <div class="col s12 l8 offset-l2">
               <div class="center-heading">
-                <h3 class="white-text">Pricing Tables</h3>
+                <h3 class="white-text">Member Benefits</h3>
                 <span class="center-line red"></span>
-                <p class="white-text">Lorem ipsum dolor sit amet consectetur adipisicing elit<br> sed do eiusmod tempor incididunt</p>
+                <p class="white-text">Support UAB's ACM and support yourself by becoming a member.</p>
               </div>
             </div>
           </div>
           <div class="row pricing-row center">
-            <div class="col s12 m4 l4 offset-m2 offset-l2">
+            <div class="col s12 m6 l4 offset-l2">
               <div class="pricing-item z-depth-2">
-                <h3 class="pricing-title">Beginner Savers</h3>
-                <div class="pricing-price"><span class="pricing-currency">$</span>19<span class="pricing-period">/ month</span></div>
-                <p class="pricing-sentence">Donec posuere fermentum dolor, nec dictum sem interdum sit amet</p>
+                <h3 class="pricing-title">Non-member</h3>
+                <div class="pricing-price"><span class="pricing-currency">$</span>0<span class="pricing-period">/ year</span></div>
+                <p class="pricing-sentence">Non-members don't recieve any of the benefits that ACM members recieve.</p>
                 <ul class="pricing-feature-list">
-                  <li class="pricing-feature"><i class="ion-android-checkmark-circle"></i>Lorem ipsum dolor sit amet</li>
-                  <li class="pricing-feature"><i class="ion-android-checkmark-circle"></i>Donec posuere fermentum</li>
-                  <li class="pricing-feature"><i class="ion-android-cancel"></i>Integer sodales orci eget sem</li>
-                  <li class="pricing-feature"><i class="ion-android-cancel"></i>Phasellus vitae libero</li>
-                  <li class="pricing-feature"><i class="ion-android-cancel"></i>Praesent mattis ex nec orci</li>
+                  <li class="pricing-feature"><i class="ion-android-cancel"></i>Attend all ACM events for free</li>
+                  <li class="pricing-feature"><i class="ion-android-cancel"></i>Access to UAB's ACM group chat</li>
+                  <li class="pricing-feature"><i class="ion-android-cancel"></i>Direct messaging to all tutors</li>
+                  <li class="pricing-feature"><i class="ion-android-cancel"></i>Network with all ACM branches nationwide</li>
+                  <li class="pricing-feature"><i class="ion-android-cancel"></i>New internship/job/research notifications</li>
+                  <li class="pricing-feature"><i class="ion-android-cancel"></i>Access to all ongoing ACM Github projects</li>
+                  <li class="pricing-feature"><i class="ion-android-cancel"></i>Much more</li>
                 </ul>
                 <button class="pricing-action waves-effect waves-light red btn">Choose plan</button>
               </div>
-            </div><!-- Col ends -->
-            <div class="col s12 m4 l4">
+            </div>
+            <div class="col s12 m6 l4">
               <div class="pricing-item pricing-item--featured z-depth-2">
                 <div class="ribbon"><span>BEST CHOICE</span></div>
-                <h3 class="pricing-title">Advanced Savers</h3>
-                <div class="pricing-price"><span class="pricing-currency">$</span>29<span class="pricing-period">/ month</span></div>
-                <p class="pricing-sentence">Donec posuere fermentum dolor, nec dictum sem interdum sit amet</p>
+                <h3 class="pricing-title">Member</h3>
+                <div class="pricing-price"><span class="pricing-currency">$</span>10<span class="pricing-period">/ year</span></div>
+                <p class="pricing-sentence">ACM members get full access to all of the benefits listed below.</p>
                 <ul class="pricing-feature-list">
-                  <li class="pricing-feature"><i class="ion-android-checkmark-circle"></i>Lorem ipsum dolor sit amet</li>
-                  <li class="pricing-feature"><i class="ion-android-checkmark-circle"></i>Donec posuere fermentum</li>
-                  <li class="pricing-feature"><i class="ion-android-cancel"></i>Integer sodales orci eget sem</li>
-                  <li class="pricing-feature"><i class="ion-android-cancel"></i>Phasellus vitae libero</li>
-                  <li class="pricing-feature"><i class="ion-android-checkmark-circle"></i>Praesent mattis ex nec orci</li>
+                  <li class="pricing-feature"><i class="ion-android-checkmark-circle"></i>Attend all ACM events for free</li>
+                  <li class="pricing-feature"><i class="ion-android-checkmark-circle"></i>Access to UAB's ACM group chat</li>
+                  <li class="pricing-feature"><i class="ion-android-checkmark-circle"></i>Direct messaging to all tutors</li>
+                  <li class="pricing-feature"><i class="ion-android-checkmark-circle"></i>Network with all ACM branches nationwide</li>
+                  <li class="pricing-feature"><i class="ion-android-checkmark-circle"></i>New internship/job/research notifications</li>
+                  <li class="pricing-feature"><i class="ion-android-checkmark-circle"></i>Access to all ongoing ACM Github projects</li>
+                  <li class="pricing-feature"><i class="ion-android-checkmark-circle"></i>Much more</li>
                 </ul>
                 <button class="pricing-action waves-effect waves-light red btn">Choose plan</button>
               </div>
-            </div><!-- Col ends -->
-          </div><!-- Row ends -->
-        </div><!-- Container ends -->
-      </div><!-- Sec-padded ends -->
-    </section><!-- Section ends -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Section location -->
     <section id="contact" class="location-section">
@@ -686,9 +591,9 @@
           <div class="col s12 m6 l6 map-block">
             <div id="map"></div>
           </div>
-        </div><!-- Row ends -->
-      </div><!-- Container ends -->
-    </section><!-- Section ends -->
+        </div>
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer id="footer" class="footer-main">
@@ -703,22 +608,13 @@
               <li><a target="_blank" href="https://www.facebook.com/UABACM/"><i class="ion-social-facebook waves-effect waves-light"></i></a></li>
               <li><a target="_blank" href="https://twitter.com/uabacm"><i class="ion-social-twitter waves-effect waves-light"></i></a></li>
             </ul>
-            <span class="copyrights">&copy; 2016. Made with <i class="ion-android-favorite"></i> by Themecrispy</span>
+            <span class="copyrights">Website done by <a href="http://www.claytonbrawley.com">Clayton Brawley.</a></span>
           </div>
         </div>
-      </div><!-- Container ends -->
-    </footer><!-- Footer ends -->
-
-    <!-- Modal for video preview -->
-    <div class="md-modal md-effect-1 valign-wrapper" id="m-video">
-      <div class="md-content z-depth-2">
-        <a class="md-close"><i class="ion-android-close"></i></a>
-        <!-- Add your video iframe here -->
-        <iframe src="https://player.vimeo.com/video/87110435"></iframe>
       </div>
-    </div><!-- Modal ends -->
+    </footer>
 
-    <!-- Modal for contact from -->
+    <!-- Contact Form Modal -->
     <div class="md-modal md-effect-1 valign-wrapper" id="m-contact">
       <div class="md-content z-depth-2">
         <h3>Shoot Us a Message</h3>
@@ -746,9 +642,9 @@
           </form>
         </div>
       </div>
-    </div><!-- Modal ends -->
+    </div>
 
-    <!-- Modal for subscription from -->
+    <!--Newsletter Modal -->
     <div class="md-modal md-effect-1 valign-wrapper" id="m-sub">
       <div class="md-content z-depth-2">
         <h3>Subscribe to our Newsletter</h3>
@@ -768,7 +664,7 @@
           </form>
         </div>
       </div>
-    </div><!-- Modal ends -->
+    </div>
 
     <!-- Scripts -->
     <script src="https://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
