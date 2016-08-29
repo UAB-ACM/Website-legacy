@@ -15,9 +15,7 @@
     <link href="css/ionicons.min.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="css/custom.css" rel="stylesheet" type="text/css">
-    <script src="js/modernizr.custom.js"></script>
-    <script src="js/angular.min.js"></script>
-    <script src="js/app.js"></script>
+
 
     <!-- Favicons -->
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/icons/favicons/apple-touch-icon-57x57.png" />
@@ -567,7 +565,7 @@
                   <li class="pricing-feature"><i class="ion-android-checkmark-circle"></i>Access to all ongoing ACM Github projects</li>
                   <li class="pricing-feature"><i class="ion-android-checkmark-circle"></i>Much more</li>
                 </ul>
-                <a class="modal-trigger pricing-action waves-effect waves-light red btn md-trigger" data-modal="m-signup">Signup</a>
+                <a class="modal-trigger pricing-action waves-effect waves-light red btn md-trigger" data-modal="m-signup">Sign up</a>
               </div>
             </div>
           </div>
@@ -669,14 +667,24 @@
               </div>
               <div class="input-field col s12">
                 <input id="signup_email" name="signup_email" type="email">
-                <label for="signup_email">Email</label>
+                <label id="signup_email_label" for="signup_email">Email</label>
               </div>
               <div class="input-field col s12">
-                <input id="signup_submit" class="waves-effect waves-light btn red center" type="submit" value="Submit" />
+                <a id="signup_submit" class="waves-effect waves-light btn red center" type="submit" value="Submit">Pay & Submit</a>
               </div>
             </div>
           </form>
         </div>
+      </div>
+    </div>
+
+    <!-- Thank you Modal -->
+    <div class="md-modal md-effect-1 valign-wrapper" id="m-thankyou">
+      <div class="md-content z-depth-2">
+        <h3>Thank you!</h3>
+        <a class="md-close"><i class="ion-android-close"></i></a>
+        <p>Thank you for signing up for the Association for Computing Machinery at UAB!</p>
+        <p>You are now a member!</p><br>
       </div>
     </div>
 
@@ -694,6 +702,14 @@
     <script src="js/jquery.validate.js" type="text/javascript"></script>
     <script src="js/classie.js" type="text/javascript"></script>
     <script src="js/config.js" type="text/javascript"></script>
+
+    <script src="https://checkout.stripe.com/checkout.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/angular.min.js"></script>
+
+    <!-- Main Scripts -->
+    <script src="js/app.js"></script>
+    <script src="js/main.js"></script>
 
   </body>
 
