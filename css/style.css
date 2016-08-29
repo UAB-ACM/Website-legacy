@@ -1694,7 +1694,7 @@ section::before {
     color: #03a9f4;
 }
 #contact .address-block ul li:nth-child(2)::before {
-    content: "\f4b8";
+    content: "\f132";
     font-family: 'Ionicons';
     font-size: 40px;
     display: block;
