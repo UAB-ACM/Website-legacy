@@ -1,4 +1,35 @@
-#welcome-image{
-  padding-top: 60px;
-  margin-bottom: -10px;
+@media (min-width: 120px) {
+  .welcome-image img {
+    position: relative;
+    margin-bottom: -5px;
+    width: 100%;
+    margin-left: 0%;
+  }
+  .mrgn-lg {
+    margin-top: 0px;
+  }
+}
+@media (min-width: 540px) {
+  .welcome-image img {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+@media (min-width: 767px) {
+  .welcome-image img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    margin-bottom: 0px;
+  }
+  .mrgn-lg {
+    margin-top: 75px;
+  }
+}
+@media (min-width: 992px) {
+  .welcome-image img {
+    width: 40%;
+    max-width: 550px;
+  }
 }
