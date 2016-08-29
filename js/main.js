@@ -82,7 +82,7 @@ function uploadForm(token){                                                     
 
   $.ajax({                                                                      //Using an AJAX request to send form and other data to server
     type: 'POST',                                                                 //Setting http type to a POST
-    url: '/membership/signup.js',                                                 //Location of server upload API
+    url: '/api/membership/signup.js',                                                 //Location of server upload API
     data: data,                                                                   //Appending data to AJAX request
     dataType: 'JSON',                                                             //Expecting the server to send us a JSON string back, this will auto parse the JSON string
     success: function(data, textStatus, jqXHR){                                   //Talking to server was successful
@@ -138,7 +138,7 @@ function onContact(e){                                                          
 
   $.ajax({                                                                      //Using an AJAX request to send form and other data to server
     type: 'POST',                                                                 //Setting http type to a POST
-    url: '/contact.js',                                                           //Location of server upload API
+    url: '/api/contact.js',                                                           //Location of server upload API
     data: data,                                                                   //Appending data to AJAX request
     dataType: 'JSON',                                                             //Expecting the server to send us a JSON string back, this will auto parse the JSON string
     success: function(data, textStatus, jqXHR){                                   //Talking to server was successful
