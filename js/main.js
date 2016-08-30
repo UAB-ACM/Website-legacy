@@ -73,26 +73,26 @@ function onPayment(token){                                                      
 
 function uploadForm(token){                                                     //Function called when wanting to submit user form to server
 
-  var data = {                                                                  //Data object that's going to be sent to server
-    name: $('signup_name').val(),                                                 //Collecting name from page
-    blazerid: $('#blazerid').val(),                                               //Collecting blazerID from page
-    email: $('#email').val(),                                                     //Collecting email from page
-    token: token                                                                  //Appending full Stripe payment token for server side payment request
+  var data = {                                                                    //Data object that's going to be sent to server
+    name: $('#signup_full_name').val(),                                             //Collecting name from page
+    blazerid: $('#signup_BlazerID').val(),                                          //Collecting blazerID from page
+    email: $('#signup_email').val(),                                                //Collecting email from page
+    token: token                                                                    //Appending full Stripe payment token for server side payment request
   };
 
-  $.ajax({                                                                      //Using an AJAX request to send form and other data to server
-    type: 'POST',                                                                 //Setting http type to a POST
-    url: '/api/membership/signup.js',                                                 //Location of server upload API
-    data: data,                                                                   //Appending data to AJAX request
-    dataType: 'JSON',                                                             //Expecting the server to send us a JSON string back, this will auto parse the JSON string
-    success: function(data, textStatus, jqXHR){                                   //Talking to server was successful
-      //Close Signup Model                                                          //Sending user to the thank you page
+  $.ajax({                                                                        //Using an AJAX request to send form and other data to server
+    type: 'POST',                                                                   //Setting http type to a POST
+    url: '/api/membership/signup.js',                                                   //Location of server upload API
+    data: data,                                                                     //Appending data to AJAX request
+    dataType: 'JSON',                                                               //Expecting the server to send us a JSON string back, this will auto parse the JSON string
+    success: function(data, textStatus, jqXHR){                                     //Talking to server was successful
+      //Close Signup Model                                                            //Sending user to the thank you page
       closeSignupModel();
       //Open Thank you Model
 
     },
-    error: function(jqXHR, textStatus, errorThrown){                              //Talking to the server wasn't successful
-      alert('There was an error, your card has not been charged.  Please try again!');  //Sending an alert to the user that the form was not submitted and their card has not be charged.
+    error: function(jqXHR, textStatus, errorThrown){                                //Talking to the server wasn't successful
+      alert('There was an error, your card has not been charged.  Please try again!');//Sending an alert to the user that the form was not submitted and their card has not be charged.
     },
   });
 }
