@@ -13,7 +13,7 @@ function onReady(){                                                             
 
 function configureStripe(){                                                     //Configure Stripe payment API
   var config = {                                                                //Configure object
-    key: 'pk_test_c8tuWe3VR5IjgUkB3gppcHud',                                    //Public API Key
+    key: 'pk_live_Lj6LDBqXdjQSSTkxafNMkfeB',                                    //Public API Key
     image: 'https://s3.amazonaws.com/stripe-uploads/acct_17d5UXBNULRn4Ikfmerchant-icon-1455139861793-facebook-profile-pic.png', //Image to display on popup
     locale: 'auto',                                                             //Automaticly determine language and other regional differences
     token: onPayment,                                                           //Callback for a successful or unsuccessful Payment
