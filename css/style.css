@@ -2071,21 +2071,23 @@ download-section .center-heading h3 {
     max-height: 100%;
     height: 100%;
     height: 100vh;
-    background-color: #FAFAFA;
+    background-color: #1E6B52;
 }
 .error-block .number h1 {
     font-size: 150px;
     font-weight: 300;
-    color: #03a9f4;
+    color: #F4C300;
 }
 .error-block .details h3 {
     font-size: 32px;
     font-weight: 300;
     padding-bottom: 8px;
+    color: #ffffff;
 }
 .error-block .details p {
     padding-bottom: 12px;
     font-weight: 300;
+    color: #ffffff;
 }
 @media only screen and (max-width: 767px) {
     .error-block .number h1 {
