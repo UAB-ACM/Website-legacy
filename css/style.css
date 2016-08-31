@@ -1287,19 +1287,19 @@ section::before {
 
 
 /* *****************************************************************
- * 10. Pricing Section
+ * 10. Joining Section
  * ************************************************************** */
 
-#price::before {
+#join::before {
     background-color: #1E6B52;
 }
-.pricing-row .pricing-item {
+.joining-row .joining-item {
     position: relative;
     margin: 0 5px 35px;
     background-color: #fff;
     border-radius: 3px;
 }
-.pricing-row .pricing-title {
+.joining-row .joining-title {
     font-size: 22px;
     color: #fff;
     font-weight: 300;
@@ -1309,11 +1309,11 @@ section::before {
     border-top-right-radius: 3px;
     background-color: #039be5;
 }
-.pricing-row .icon {
+.joining-row .icon {
     display: inline-block;
     min-width: 2em;
 }
-.pricing-row .pricing-price {
+.joining-row .joining-price {
     padding: 25px 0;
     position: relative;
     line-height: 50px;
@@ -1322,23 +1322,23 @@ section::before {
     color: #fff;
     font-size: 80px;
 }
-.pricing-row .pricing-currency {
+.joining-row .joining-currency {
     font-size: 40px;
     vertical-align: super;
     font-weight: 300;
 }
-.pricing-row .pricing-period {
+.joining-row .joining-period {
     font-size: 16px;
     font-weight: 300;
 }
-.pricing-row .pricing-sentence {
+.joining-row .joining-sentence {
     padding: 15px 25px;
     font-size: 15px;
     font-weight: 300;
     background-color: #fff;
     text-align: left !important;
 }
-.pricing-row .pricing-feature-list {
+.joining-row .joining-feature-list {
     font-weight: 300;
     margin: 0;
     letter-spacing: 0;
@@ -1346,7 +1346,7 @@ section::before {
     list-style: none;
     background-color: #fff;
 }
-.pricing-row .pricing-feature {
+.joining-row .joining-feature {
     border: 1px solid #ddd;
     border-bottom: none;
     position: relative;
@@ -1354,25 +1354,25 @@ section::before {
     font-size: 15px;
     text-align: left !important;
 }
-.pricing-row .pricing-feature i {
+.joining-row .joining-feature i {
     font-size: 18px;
     position: absolute;
     left: 11px;
     top: 9px;
 }
-.pricing-row .pricing-feature:first-child {
+.joining-row .joining-feature:first-child {
     border-radius: 3px 3px 0 0;
 }
-.pricing-row .pricing-feature:last-child {
+.joining-row .joining-feature:last-child {
     border-bottom: 1px solid #ddd;
     border-radius: 0 0 3px 3px;
 }
-.pricing-row .pricing-action {
+.joining-row .joining-action {
     margin: 25px;
     position: relative;
     display: inline-block;
 }
-.pricing-item .ribbon {
+.joining-item .ribbon {
     position: absolute;
     right: -5px;
     top: -5px;
@@ -1382,7 +1382,7 @@ section::before {
     height: 75px;
     text-align: right;
 }
-.pricing-item .ribbon span {
+.joining-item .ribbon span {
     font-size: 10px;
     font-weight: bold;
     color: #FFF;
@@ -1401,7 +1401,7 @@ section::before {
     position: absolute;
     top: 19px; right: -21px;
 }
-.pricing-item .ribbon span::before {
+.joining-item .ribbon span::before {
     content: "";
     position: absolute;
     left: 0px;
@@ -1412,7 +1412,7 @@ section::before {
     border-bottom: 3px solid transparent;
     border-top: 3px solid #F44336;
 }
-.pricing-item .ribbon span::after {
+.joining-item .ribbon span::after {
     content: "";
     position: absolute;
     right: 0px;
@@ -1424,27 +1424,27 @@ section::before {
     border-top: 3px solid #F44336;
 }
 @media only screen and ( max-width:992px ) {
-    .pricing-row .pricing-title {
+    .joining-row .joining-title {
         font-size: 18px;
     }
-    .pricing-row .pricing-sentence,
-    .pricing-row .pricing-feature,
-    .pricing-row .pricing-action {
+    .joining-row .joining-sentence,
+    .joining-row .joining-feature,
+    .joining-row .joining-action {
         font-size: 15px;
     }
-    .pricing-row .pricing-feature i {
+    .joining-row .joining-feature i {
         font-size: 16px;
         top: 10px;
     }
-    .pricing-row .pricing-currency {
+    .joining-row .joining-currency {
         font-size: 36px;
     }
-    .pricing-row .pricing-price {
+    .joining-row .joining-price {
         font-size: 70px;
     }
 }
 @media only screen and ( max-width:767px ) {
-    .pricing-row .pricing-price {
+    .joining-row .joining-price {
         padding: 20px 0;
     }
 }
