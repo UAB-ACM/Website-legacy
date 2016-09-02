@@ -1,0 +1,14 @@
+/* Developers */
+  Name: Clayton Brawley
+  Title: Initial Front-end Developer
+  Website: http://claytonbrawley.com
+  Email: cdbrawley@outlook.com
+
+  Name: Andrew Pearson
+  Title: Initial Server & Backend Developer
+  Website: https://andrewpe.com
+  Email: andrew@andrewpe.com
+
+/* SITE */
+  Doctype: HTML5
+	Software: Atom, Nginx, NodeJS, Bootstrap, Angular, CentOS

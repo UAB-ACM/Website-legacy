@@ -160,4 +160,5 @@ myApp.controller('mainController', function($scope, $log, $filter) {
   }
 
   $scope.loadUniqueTutors();
+
 });

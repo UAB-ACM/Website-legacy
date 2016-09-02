@@ -24,6 +24,7 @@ function configureStripe(){                                                     
 function addEventListeners(){                                                   //Function that contains all event listener adds
   $('#signup_BlazerID').on('blur', blazeridBlur);                                 //Call the blazeridBlur function when user clicks off of blazerID field
   $('#signup_submit').on('click', onSignup);                                      //Call the submit function when user clicks the submit button
+
   $('#contact_submit').on('click', onContact);                                    //Call the submit function when user clicks the submit button
 
 }
