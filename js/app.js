@@ -38,10 +38,6 @@ myApp.controller('mainController', function($scope, $log, $filter) {
         className: "Introduction to Computation"
       },
       {
-        classNumber: "CS 203",
-        className: "Object-Oriented Programming"
-      },
-      {
         classNumber: "CS 303",
         className: "Algorithms and Data Structures"
       },
