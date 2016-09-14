@@ -98,7 +98,7 @@ myApp.controller('mainController', function($scope, $log, $filter) {
       {
         classNumber: "CS 303",
         className: "Algorithms and Data Structures"
-      }
+      },
       {
         classNumber: "CS 350",
         className: "Automata and Formal Languages"
