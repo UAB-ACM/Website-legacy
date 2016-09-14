@@ -14,113 +14,78 @@ myApp.controller('mainController', function($scope, $log, $filter) {
       tutorName: "Clayton Brawley",
       tutorEmail: "cbrawley@uab.edu",
       classes: [{
-        classNumber: "CS 201",
-        className: "Intro Programming"
-      }, {
+        classNumber: "CS 303",
+        className: "Algorithms and Data Structures"
+      },
+      {
         classNumber: "CS 330",
-        className: "Assembly Language"
+        className: "Computer Organization/Assembly"
+      },
+      {
+        classNumber: "CS 350",
+        className: "Automata and Formal Languages"
       }],
       availableTimes: [
-        "Monday: 8:00am - 11:00am, 1:00pm - 2:30pm",
-        "Wednesday: 8:00am - 11:00am",
-        "Friday: 8:00am - 11:00am, 1:00pm - 2:30pm"
+        "Monday: 10:00am - 12:00pm",
+        "Thursday: 10:00am - 12:00pm"
       ]
     },
-    // Second tutor information
     {
-      tutorName: "Mossah",
-      tutorEmail: "cbrawley@uab.edu",
+      tutorName: "Matt Schmale",
+      tutorEmail: "mattschmale1@uab.edu",
       classes: [{
-        classNumber: "CS 433",
-        className: "Operating Systems"
-      }, {
-        classNumber: "CS 420",
-        className: "Software Engineering"
-      }, {
-        classNumber: "CS 250",
-        className: "Discrete Structures"
-      }, {
-        classNumber: "CS 499",
-        className: "Senior Capstone"
-      }, {
-        classNumber: "CS 201",
-        className: "Intro Programming"
-      }, {
-        classNumber: "CS 330",
-        className: "Assembly Language"
+        classNumber: "CS 103",
+        className: "Introduction to Computation"
+      },
+      {
+        classNumber: "CS 203",
+        className: "Object-Oriented Programming"
+      },
+      {
+        classNumber: "CS 303",
+        className: "Algorithms and Data Structures"
+      },
+      {
+        classNumber: "CS 350",
+        className: "Automata and Formal Languages"
       }],
       availableTimes: [
-        "Monday: 8:00am - 11:00am, 1:00pm - 2:30pm",
-        "Wednesday: 8:00am - 11:00am, 1:00pm - 2:30pm"
+        "Monday: 2:00pm - 3:00pm",
       ]
     },
-    // Third tutor information
     {
-      tutorName: "Lina",
-      tutorEmail: "cbrawley@uab.edu",
+      tutorName: "Lina King",
+      tutorEmail: "mattschmale1@uab.edu",
       classes: [{
-        classNumber: "CS 433",
-        className: "Operating Systems"
-      }, {
-        classNumber: "CS 499",
-        className: "Senior Capstone"
-      }, {
-        classNumber: "CS 302",
-        className: "Java Programming"
-      }, {
-        classNumber: "CS 330",
-        className: "Assembly Language"
+        classNumber: "CS 103",
+        className: "Introduction to Computation"
       }],
       availableTimes: [
-        "Monday: 8:00am - 11:00am, 1:00pm - 2:30pm",
-        "Wednesday: 8:00am - 11:00am, 1:00pm - 2:30pm"
+        "Tuesday: 11:00am - 12:00pm",
+        "Thursday: 2:00pm - 3:00pm",
+        "Friday: 11:00am - 12:00pm",
       ]
     },
-    // Fourth tutor information
     {
-      tutorName: "Andrew",
-      tutorEmail: "cbrawley@uab.edu",
+      tutorName: "Bhuwan Bashel",
+      tutorEmail: "bbashel1@uab.edu",
       classes: [{
-        classNumber: "CS 433",
-        className: "Operating Systems"
-      }, {
-        classNumber: "CS 302",
-        className: "Java Programming"
-      }, {
-        classNumber: "CS 250",
-        className: "Discrete Structures"
-      }, {
-        classNumber: "CS 420",
-        className: "Software Engineering"
-      }, {
-        classNumber: "CS 330",
-        className: "Assembly Language"
+        classNumber: "CS 303",
+        className: "Algorithms and Data Structures"
       }],
       availableTimes: [
-        "Monday: 8:00am - 11:00am, 1:00pm - 2:30pm",
-        "Wednesday: 8:00am - 11:00am, 1:00pm - 2:30pm"
+        "Wednesday: 10:00am - 11:00am",
       ]
     },
-    // Fifth tutor information
     {
-      tutorName: "Matt",
-      tutorEmail: "cbrawley@uab.edu",
+      tutorName: "Morgan Hawthorne",
+      tutorEmail: "bbashel1@uab.edu",
       classes: [{
-        classNumber: "CS 420",
-        className: "Software Engineering"
-      }, {
-        classNumber: "CS 201",
-        className: "Intro Programming"
-      }, {
-        classNumber: "CS 250",
-        className: "Discrete Structures"
-      }, {
-        classNumber: "CS 330",
-        className: "Assembly Language"
+        classNumber: "Any Classes (except 401)",
+        className: "All Classes"
       }],
       availableTimes: [
-        "Monday: 8:00am - 11:00am, 1:00pm - 2:30pm",
-        "Wednesday: 8:00am - 11:00am, 1:00pm - 2:30pm"
+        "Tuesday: 4:40pm - 5:30pm",
       ]
     }
   ];
