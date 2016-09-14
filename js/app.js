@@ -32,7 +32,7 @@ myApp.controller('mainController', function($scope, $log, $filter) {
     },
     {
       tutorName: "Matt Schmale",
-      tutorEmail: "mattschmale1@uab.edu",
+      tutorEmail: "mattsch@uab.edu",
       classes: [{
         classNumber: "CS 103",
         className: "Introduction to Computation"
@@ -55,7 +55,7 @@ myApp.controller('mainController', function($scope, $log, $filter) {
     },
     {
       tutorName: "Lina King",
-      tutorEmail: "mattschmale1@uab.edu",
+      tutorEmail: "linaru@uab.edu",
       classes: [{
         classNumber: "CS 103",
         className: "Introduction to Computation"
@@ -79,13 +79,32 @@ myApp.controller('mainController', function($scope, $log, $filter) {
     },
     {
       tutorName: "Morgan Hawthorne",
-      tutorEmail: "bbashel1@uab.edu",
+      tutorEmail: "morganbh@uab.edu",
       classes: [{
-        classNumber: "Any Classes (except 401)",
+        classNumber: "",
         className: "All Classes"
       }],
       availableTimes: [
-        "Tuesday: 4:40pm - 5:30pm",
+        "Tuesday: 4:30pm - 5:30pm",
+      ]
+    },
+    {
+      tutorName: "Syed Hasan",
+      tutorEmail: "syedmoaz@uab.edu",
+      classes: [{
+        classNumber: "CS 203",
+        className: "Object-Oriented Programming"
+      },
+      {
+        classNumber: "CS 303",
+        className: "Algorithms and Data Structures"
+      }
+      {
+        classNumber: "CS 350",
+        className: "Automata and Formal Languages"
+      }],
+      availableTimes: [
+        "Monday: 9:00am - 11:00am",
       ]
     }
   ];
