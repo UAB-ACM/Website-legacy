@@ -77,9 +77,34 @@ myApp.controller('mainController', function($scope, $log, $filter) {
       tutorName: "Morgan Hawthorne",
       tutorEmail: "morganbh@uab.edu",
       classes: [{
-        classNumber: "",
-        className: "All Classes"
-      }],
+        classNumber: "CS 103",
+        className: "Introduction to Computation"
+      },
+      {
+        classNumber: "CS 203",
+        className: "Object-Oriented Programming"
+      },
+      {
+        classNumber: "CS 303",
+        className: "Algorithms and Data Structures"
+      },
+      {
+        classNumber: "CS 330",
+        className: "Computer Organization/Assembly"
+      },
+      {
+        classNumber: "CS 350",
+        className: "Automata and Formal Languages"
+      },
+      {
+        classNumber: "CS 250",
+        className: "Discrete Structures"
+      },
+      {
+        classNumber: "CS 433",
+        className: "Operating Systems"
+      }
+    ]],
       availableTimes: [
         "Tuesday: 4:30pm - 5:30pm",
       ]
