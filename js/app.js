@@ -126,6 +126,38 @@ myApp.controller('mainController', function($scope, $log, $filter) {
       availableTimes: [
         "Monday: 9:00am - 11:00am",
       ]
+    },
+    {
+      tutorName: "Andrea Beam",
+      tutorEmail: "apbeam@uab.edu",
+      classes: [
+      {
+        classNumber: "CS 103",
+        className: "Introduction to Computation"
+      },
+      {
+        classNumber: "CS 203",
+        className: "Object-Oriented Programming"
+      },
+      {
+        classNumber: "CS 303",
+        className: "Algorithms and Data Structures"
+      },
+      {
+        classNumber: "CS 250",
+        className: "Discrete Structures"
+      },
+      {
+        classNumber: "CS 350",
+        className: "Automata and Formal Languages"
+      },
+      {
+        classNumber: "CS 330",
+        className: "Computer Organization/Assembly"
+      }],
+      availableTimes: [
+        "Monday: 9:00am - 11:00am",
+      ]
     }
   ];
 
