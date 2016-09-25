@@ -105,7 +105,7 @@ myApp.controller('mainController', function($scope, $log, $filter) {
         className: "Operating Systems"
       }],
       availableTimes: [
-        "Tuesday: 4:30pm - 5:30pm",
+        "Friday: 4:30pm - 5:30pm",
       ]
     },
     {
