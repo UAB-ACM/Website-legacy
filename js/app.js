@@ -123,10 +123,10 @@ myApp.controller('mainController', function($scope, $log, $filter) {
     //     classNumber: "CS 350",
     //     className: "Automata and Formal Languages"
     //   }],
-      availableTimes: [
-        "Monday: 9:00am - 11:00am",
-      ]
-    },
+    //   availableTimes: [
+    //     "Monday: 9:00am - 11:00am",
+    //   ]
+    // },
     {
       tutorName: "Andrea Beam",
       tutorEmail: "apbeam@uab.edu",
