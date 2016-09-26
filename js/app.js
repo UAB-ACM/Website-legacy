@@ -108,21 +108,21 @@ myApp.controller('mainController', function($scope, $log, $filter) {
         "Friday: 4:30pm - 5:30pm",
       ]
     },
-    {
-      tutorName: "Syed Hasan",
-      tutorEmail: "syedmoaz@uab.edu",
-      classes: [{
-        classNumber: "CS 203",
-        className: "Object-Oriented Programming"
-      },
-      {
-        classNumber: "CS 303",
-        className: "Algorithms and Data Structures"
-      },
-      {
-        classNumber: "CS 350",
-        className: "Automata and Formal Languages"
-      }],
+    // {
+    //   tutorName: "Syed Hasan",
+    //   tutorEmail: "syedmoaz@uab.edu",
+    //   classes: [{
+    //     classNumber: "CS 203",
+    //     className: "Object-Oriented Programming"
+    //   },
+    //   {
+    //     classNumber: "CS 303",
+    //     className: "Algorithms and Data Structures"
+    //   },
+    //   {
+    //     classNumber: "CS 350",
+    //     className: "Automata and Formal Languages"
+    //   }],
       availableTimes: [
         "Monday: 9:00am - 11:00am",
       ]
