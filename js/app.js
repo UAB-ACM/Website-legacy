@@ -156,6 +156,7 @@ myApp.controller('mainController', function($scope, $log, $filter) {
         className: "Computer Organization/Assembly"
       }],
       availableTimes: [
+        "Tuesday: 10:00am - 11:00am",
         "Friday: 12:00pm - 1:00pm",
       ]
     }
