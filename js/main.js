@@ -132,7 +132,7 @@ function onContact(e){                                                          
   }
 
   var data = {                                                                  //Data object that's going to be sent to server
-    name: $('contact_name').val(),                                                //Collecting name from page
+    name: $('#contact_name').val(),                                                //Collecting name from page
     email: $('#contact_email').val(),                                             //Collecting blazerID from page
     message: $('#contact_message').val(),                                         //Collecting email from page
   };
