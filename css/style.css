@@ -1469,9 +1469,9 @@ section::before {
     border-bottom: 1px solid rgba(221, 221, 221, 0.58);
 }
 .team-section .card img {
-    width: 160px;
+    /*width: 160px;*/
     display: inline-block;
-    padding: 15px 0;
+    /*padding: 15px 0;*/
 }
 .team-section .card .card-content {
     padding: 10px 20px;
