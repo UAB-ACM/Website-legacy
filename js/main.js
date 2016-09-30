@@ -85,7 +85,6 @@ function uploadForm(token){                                                     
     type: 'POST',                                                                   //Setting http type to a POST
     url: '/api/membership/signup.js',                                                   //Location of server upload API
     data: data,                                                                     //Appending data to AJAX request
-    dataType: 'JSON',                                                               //Expecting the server to send us a JSON string back, this will auto parse the JSON string
     success: function(data, textStatus, jqXHR){                                     //Talking to server was successful
       //Close Signup Model                                                            //Sending user to the thank you page
       closeSignupModel();
