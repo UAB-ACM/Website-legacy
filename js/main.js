@@ -89,13 +89,17 @@ function uploadForm(token){                                                     
       //Close Signup Model                                                            //Sending user to the thank you page
       closeSignupModel();
       //Open Thank you Model
-
+      showThankYouModal();
     },
     error: function(jqXHR, textStatus, errorThrown){                                //Talking to the server wasn't successful
       alert('There was an error, your card has not been charged.  Please try again!');//Sending an alert to the user that the form was not submitted and their card has not be charged.
     },
   });
 }
+
+$( "#md-close-ty" ).click(function() {                                          // Event listener to close thank you modal when 'X' is clicked
+  $('#m-thankyou').removeClass('md-show');
+});
 
 function closeSignupModel(){
   //Closing Model
@@ -117,6 +121,11 @@ function closeContactModel(){
   $('#contact_message').val('');
 }
 
+function showThankYouModal(){
+  //Open thank you modal
+  $('#m-thankyou').addClass('md-show');
+
+}
 
 function onContact(e){                                                          //Function called when user clicks the submit button
   //Need to check if all fields are filled out
@@ -144,7 +153,7 @@ function onContact(e){                                                          
       //Close Signup Model                                                          //Sending user to the thank you page
       closeContactModel();
       //Open Thank you Model
-
+      showThankYouModal();
     },
     error: function(jqXHR, textStatus, errorThrown){                              //Talking to the server wasn't successful
       alert('There was an error, your message has not been sent.  Please try again!');  //Sending an alert to the user that the form was not submitted and their card has not be charged.
