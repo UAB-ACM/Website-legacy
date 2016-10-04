@@ -101,6 +101,10 @@ $( "#md-close-ty" ).click(function() {                                          
   $('#m-thankyou').removeClass('md-show');
 });
 
+$( "#md-close-ty-contact" ).click(function() {                                  // Event listener to close contact modal when 'X' is clicked
+  $('#m-thankyou-contact').removeClass('md-show');
+});
+
 function closeSignupModel(){
   //Closing Model
   $('#m-signup').removeClass('md-show');
@@ -121,10 +125,14 @@ function closeContactModel(){
   $('#contact_message').val('');
 }
 
-function showThankYouModal(){
+function showThankYouModal() {                                                  //Function to open Sign Up success modal
   //Open thank you modal
   $('#m-thankyou').addClass('md-show');
+}
 
+function showContactSuccessModal() {                                            //Function to open contact success modal
+  //Open thank you modal
+  $('#m-thankyou-contact').addClass('md-show');
 }
 
 function onContact(e){                                                          //Function called when user clicks the submit button
@@ -153,7 +161,7 @@ function onContact(e){                                                          
       //Close Signup Model                                                          //Sending user to the thank you page
       closeContactModel();
       //Open Thank you Model
-      showThankYouModal();
+      showContactSuccessModal();
     },
     error: function(jqXHR, textStatus, errorThrown){                              //Talking to the server wasn't successful
       alert('There was an error, your message has not been sent.  Please try again!');  //Sending an alert to the user that the form was not submitted and their card has not be charged.
