@@ -31,25 +31,6 @@ myApp.controller('mainController', function($scope, $log, $filter) {
       ]
     },
     {
-      tutorName: "Matt Schmale",
-      tutorEmail: "mattsch@uab.edu",
-      classes: [{
-        classNumber: "CS 103",
-        className: "Introduction to Computation"
-      },
-      {
-        classNumber: "CS 303",
-        className: "Algorithms and Data Structures"
-      },
-      {
-        classNumber: "CS 350",
-        className: "Automata and Formal Languages"
-      }],
-      availableTimes: [
-        "Monday: 2:00pm - 3:00pm",
-      ]
-    },
-    {
       tutorName: "Lina King",
       tutorEmail: "linaru@uab.edu",
       classes: [{
@@ -57,7 +38,7 @@ myApp.controller('mainController', function($scope, $log, $filter) {
         className: "Introduction to Computation"
       }],
       availableTimes: [
-        "Tuesday: 11:00am - 12:00pm",
+        "Tuesday: 2:00am - 3:00pm",
         "Thursday: 2:00pm - 3:00pm",
         "Friday: 11:00am - 12:00pm",
       ]
@@ -108,25 +89,6 @@ myApp.controller('mainController', function($scope, $log, $filter) {
         "Friday: 4:30pm - 5:30pm",
       ]
     },
-    // {
-    //   tutorName: "Syed Hasan",
-    //   tutorEmail: "syedmoaz@uab.edu",
-    //   classes: [{
-    //     classNumber: "CS 203",
-    //     className: "Object-Oriented Programming"
-    //   },
-    //   {
-    //     classNumber: "CS 303",
-    //     className: "Algorithms and Data Structures"
-    //   },
-    //   {
-    //     classNumber: "CS 350",
-    //     className: "Automata and Formal Languages"
-    //   }],
-    //   availableTimes: [
-    //     "Monday: 9:00am - 11:00am",
-    //   ]
-    // },
     {
       tutorName: "Andrea Beam",
       tutorEmail: "apbeam@uab.edu",
