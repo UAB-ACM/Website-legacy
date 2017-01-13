@@ -6,7 +6,7 @@
 
   Name: Andrew Pearson
   Title: Initial Server & Backend Developer
-  Website: https://andrewpe.com
+  Website: https://www.andrewpe.com
   Email: andrew@andrewpe.com
 
 /* SITE */

@@ -10,118 +10,26 @@ myApp.controller('mainController', function($scope, $log, $filter) {
   $scope.tutors = [
 
     // First tutor information
-    {
-      tutorName: "Clayton Brawley",
-      tutorEmail: "cbrawley@uab.edu",
-      classes: [{
-        classNumber: "CS 303",
-        className: "Algorithms and Data Structures"
-      },
-      {
-        classNumber: "CS 330",
-        className: "Computer Organization/Assembly"
-      },
-      {
-        classNumber: "CS 350",
-        className: "Automata and Formal Languages"
-      }],
-      availableTimes: [
-        "Monday: 10:00am - 12:00pm",
-        "Thursday: 10:00am - 12:00pm"
-      ]
-    },
-    {
-      tutorName: "Lina King",
-      tutorEmail: "linaru@uab.edu",
-      classes: [{
-        classNumber: "CS 103",
-        className: "Introduction to Computation"
-      }],
-      availableTimes: [
-        "Tuesday: 2:00am - 3:00pm",
-        "Thursday: 2:00pm - 3:00pm",
-        "Friday: 11:00am - 12:00pm",
-      ]
-    },
-    {
-      tutorName: "Bhuwan Bashel",
-      tutorEmail: "bbashel1@uab.edu",
-      classes: [{
-        classNumber: "CS 303",
-        className: "Algorithms and Data Structures"
-      }],
-      availableTimes: [
-        "Wednesday: 10:00am - 11:00am",
-      ]
-    },
-    {
-      tutorName: "Morgan Hawthorne",
-      tutorEmail: "morganbh@uab.edu",
-      classes: [{
-        classNumber: "CS 103",
-        className: "Introduction to Computation"
-      },
-      {
-        classNumber: "CS 203",
-        className: "Object-Oriented Programming"
-      },
-      {
-        classNumber: "CS 303",
-        className: "Algorithms and Data Structures"
-      },
-      {
-        classNumber: "CS 330",
-        className: "Computer Organization/Assembly"
-      },
-      {
-        classNumber: "CS 350",
-        className: "Automata and Formal Languages"
-      },
-      {
-        classNumber: "CS 250",
-        className: "Discrete Structures"
-      },
-      {
-        classNumber: "CS 433",
-        className: "Operating Systems"
-      }],
-      availableTimes: [
-        "Friday: 4:30pm - 5:30pm",
-      ]
-    },
-    {
-      tutorName: "Andrea Beam",
-      tutorEmail: "apbeam@uab.edu",
-      classes: [
-      {
-        classNumber: "CS 103",
-        className: "Introduction to Computation"
-      },
-      {
-        classNumber: "CS 203",
-        className: "Object-Oriented Programming"
-      },
-      {
-        classNumber: "CS 303",
-        className: "Algorithms and Data Structures"
-      },
-      {
-        classNumber: "CS 250",
-        className: "Discrete Structures"
-      },
-      {
-        classNumber: "CS 350",
-        className: "Automata and Formal Languages"
-      },
-      {
-        classNumber: "CS 330",
-        className: "Computer Organization/Assembly"
-      }],
-      availableTimes: [
-        "Tuesday: 10:00am - 11:00am",
-        "Friday: 12:00pm - 1:00pm",
-      ]
-    }
+    // {
+    //   tutorName: "Clayton Brawley",
+    //   tutorEmail: "cbrawley@uab.edu",
+    //   classes: [{
+    //     classNumber: "CS 303",
+    //     className: "Algorithms and Data Structures"
+    //   },
+    //   {
+    //     classNumber: "CS 330",
+    //     className: "Computer Organization/Assembly"
+    //   },
+    //   {
+    //     classNumber: "CS 350",
+    //     className: "Automata and Formal Languages"
+    //   }],
+    //   availableTimes: [
+    //     "Monday: 10:00am - 12:00pm",
+    //     "Thursday: 10:00am - 12:00pm"
+    //   ]
+    // }
   ];
 
   $scope.loadUniqueTutors = function() {
