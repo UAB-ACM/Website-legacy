@@ -10,26 +10,18 @@ myApp.controller('mainController', function($scope, $log, $filter) {
   $scope.tutors = [
 
     // First tutor information
-    // {
-    //   tutorName: "Clayton Brawley",
-    //   tutorEmail: "cbrawley@uab.edu",
-    //   classes: [{
-    //     classNumber: "CS 303",
-    //     className: "Algorithms and Data Structures"
-    //   },
-    //   {
-    //     classNumber: "CS 330",
-    //     className: "Computer Organization/Assembly"
-    //   },
-    //   {
-    //     classNumber: "CS 350",
-    //     className: "Automata and Formal Languages"
-    //   }],
-    //   availableTimes: [
-    //     "Monday: 10:00am - 12:00pm",
-    //     "Thursday: 10:00am - 12:00pm"
-    //   ]
-    // }
+    {
+      tutorName: "Ayushi Patel",
+      tutorEmail: "ayushi27@uab.edu",
+      classes: [{
+        classNumber: "CS 203",
+        className: "Object-Oriented Programming"
+      }],
+      availableTimes: [
+        "Tuesday: 11:00am - 12:00pm",
+        "Thursday: 11:00am - 12:00pm"
+      ]
+    }
   ];
 
   $scope.loadUniqueTutors = function() {
