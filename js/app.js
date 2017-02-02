@@ -23,8 +23,8 @@ myApp.controller('mainController', function($scope, $log, $filter) {
       ]
     },
     {
-      tutorName: "Josh Caryney",
-      tutorEmail: "ayushi27@uab.edu",
+      tutorName: "Josh Carney",
+      tutorEmail: "carneyj4@uab.edu",
       classes: [{
         classNumber: "CS 203",
         className: "Object-Oriented Programming"
