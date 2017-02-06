@@ -30,8 +30,25 @@ myApp.controller('mainController', function($scope, $log, $filter) {
         className: "Object-Oriented Programming"
       }],
       availableTimes: [
-        "Tuesday: 5:00am - 6:00pm",
-        "Thursday: 5:00am - 6:00pm"
+        "Tuesday: 5:00pm - 6:00pm",
+        "Thursday: 5:00pm - 6:00pm"
+      ]
+    },
+    {
+      tutorName: "Austin Anderson",
+      tutorEmail: "aa94@uab.edu",
+      classes: [{
+        classNumber: "CS 103",
+        className: "Introduction to Computation"
+      },
+      {
+        classNumber: "CS 250",
+        className: "Discrete Structures"
+      }],
+      availableTimes: [
+        "Monday: 3:00pm - 4:00pm",
+        "Tuesday: 12:00pm - 1:00pm",
+        "Thursday: 12:00pm - 1:00pm"
       ]
     }
   ];
