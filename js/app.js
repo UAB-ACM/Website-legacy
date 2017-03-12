@@ -18,8 +18,8 @@ myApp.controller('mainController', function($scope, $log, $filter) {
         className: "Object-Oriented Programming"
       }],
       availableTimes: [
-        "Tuesday: 11:00am - 12:00pm",
-        "Thursday: 11:00am - 12:00pm"
+        "Tuesday: 12:30am - 1:00pm",
+        "Thursday: 12:30am - 1:00pm"
       ]
     },
     {
