@@ -16,10 +16,66 @@ myApp.controller('mainController', function($scope, $log, $filter) {
       classes: [{
         classNumber: "CS 203",
         className: "Object-Oriented Programming"
-      }],
+        },
+        {
+          classNumber: "CS 103",
+          className: "Introduction to Computation"
+          }
+    ],
       availableTimes: [
-        "Tuesday: 12:30am - 1:00pm",
-        "Thursday: 12:30am - 1:00pm"
+        "By appointment."
+      ]
+    },
+    {
+      tutorName: "Zachary Bailey",
+      tutorEmail: "zbailey@uab.edu",
+      classes: [
+        {
+          classNumber: "CS 103",
+          className: "Introduction to Computation"
+          }
+    ],
+      availableTimes: [
+        "Monday: After 12:00pm",
+        "Wednesday: After 12:00pm"
+      ]
+    },
+    {
+      tutorName: "Bryan Arretteig",
+      tutorEmail: "medzo@uab.edu",
+      classes: [
+        {
+          classNumber: "CS 103",
+          className: "Introduction to Computation"
+      },
+      {
+        classNumber: "CS 203",
+        className: "Object-Oriented Programming"
+    },
+    {
+      classNumber: "CS 303",
+      className: "Algorithms and Datastructures"
+  }
+    ],
+      availableTimes: [
+        "By appointment"
+      ]
+    },
+    {
+      tutorName: "Andrew Pearson",
+      tutorEmail: "andrewpe@uab.edu",
+      classes: [{
+        classNumber: "CS 203",
+        className: "Object-Oriented Programming"
+        },
+        {
+          classNumber: "CS 103",
+          className: "Introduction to Computation"
+          }
+    ],
+      availableTimes: [
+        "By appointment.",
+        "Thursday: 9:15AM - 11:00AM & After 3:15PM"
       ]
     },
     {
@@ -28,10 +84,18 @@ myApp.controller('mainController', function($scope, $log, $filter) {
       classes: [{
         classNumber: "CS 203",
         className: "Object-Oriented Programming"
-      }],
+    },
+    {
+      classNumber: "CS 303",
+      className: "Algorithms and Data Structures"
+  },
+    {
+      classNumber: "CS 330",
+      className: "Assembly and Computer Organization"
+    }],
       availableTimes: [
-        "Tuesday: 5:00pm - 6:00pm",
-        "Thursday: 5:00pm - 6:00pm"
+        "Tuesday: 11:30am - 12:30pm",
+        "Thursday: 11:30am - 12:30pm"
       ]
     },
     {
@@ -40,10 +104,6 @@ myApp.controller('mainController', function($scope, $log, $filter) {
       classes: [{
         classNumber: "CS 103",
         className: "Introduction to Computation"
-      },
-      {
-        classNumber: "CS 250",
-        className: "Discrete Structures"
       }],
       availableTimes: [
         "Monday: 3:00pm - 4:00pm",
