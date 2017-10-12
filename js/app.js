@@ -36,7 +36,7 @@ myApp.controller('mainController', function($scope, $log, $filter) {
           }
     ],
       availableTimes: [
-        "Monday: After 12:00pm",
+        "Monday: 12:30pm - 2:00pm",
         "Wednesday: After 12:00pm"
       ]
     },
@@ -56,6 +56,19 @@ myApp.controller('mainController', function($scope, $log, $filter) {
       classNumber: "CS 303",
       className: "Algorithms and Datastructures"
   }
+    ],
+      availableTimes: [
+        "By appointment"
+      ]
+    },
+    {
+      tutorName: "Chandler Jones",
+      tutorEmail: "chanj1@uab.edu",
+      classes: [
+        {
+          classNumber: "CS 103",
+          className: "Introduction to Computation"
+      }
     ],
       availableTimes: [
         "By appointment"
@@ -96,19 +109,6 @@ myApp.controller('mainController', function($scope, $log, $filter) {
       availableTimes: [
         "Tuesday: 11:30am - 12:30pm",
         "Thursday: 11:30am - 12:30pm"
-      ]
-    },
-    {
-      tutorName: "Austin Anderson",
-      tutorEmail: "aa94@uab.edu",
-      classes: [{
-        classNumber: "CS 103",
-        className: "Introduction to Computation"
-      }],
-      availableTimes: [
-        "Monday: 3:00pm - 4:00pm",
-        "Tuesday: 12:00pm - 1:00pm",
-        "Thursday: 12:00pm - 1:00pm"
       ]
     }
   ];
