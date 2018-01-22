@@ -36,8 +36,7 @@ myApp.controller('mainController', function($scope, $log, $filter) {
           }
     ],
       availableTimes: [
-        "Monday: 12:30pm - 2:00pm",
-        "Wednesday: After 12:00pm"
+        "By appointment."
       ]
     },
     {
@@ -75,23 +74,6 @@ myApp.controller('mainController', function($scope, $log, $filter) {
       ]
     },
     {
-      tutorName: "Andrew Pearson",
-      tutorEmail: "andrewpe@uab.edu",
-      classes: [{
-        classNumber: "CS 203",
-        className: "Object-Oriented Programming"
-        },
-        {
-          classNumber: "CS 103",
-          className: "Introduction to Computation"
-          }
-    ],
-      availableTimes: [
-        "By appointment.",
-        "Thursday: 9:15AM - 11:00AM & After 3:15PM"
-      ]
-    },
-    {
       tutorName: "Josh Carney",
       tutorEmail: "carneyj4@uab.edu",
       classes: [{
@@ -107,8 +89,7 @@ myApp.controller('mainController', function($scope, $log, $filter) {
       className: "Assembly and Computer Organization"
     }],
       availableTimes: [
-        "Tuesday: 11:30am - 12:30pm",
-        "Thursday: 11:30am - 12:30pm"
+        "By appointment."
       ]
     }
   ];
